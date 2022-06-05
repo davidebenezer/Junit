@@ -10,6 +10,7 @@ import java.util.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Generated
 public class DemoUtils {
     private String originalString = "Hello";
 
@@ -19,11 +20,11 @@ public class DemoUtils {
 
     private List<String> stringList = List.of("Hello", "everyone");
 
-    private Map originalMap;
+    private Map<String, String> originalMap;
 
     public Map getOriginalMap(){
         if(MapUtils.isEmpty(originalMap)){
-            originalMap = new HashMap();
+            originalMap = new HashMap<>();
             originalMap.put("sku", "1");
             originalMap.put("item", "pencil");
         }

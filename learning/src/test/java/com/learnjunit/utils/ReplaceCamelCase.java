@@ -4,7 +4,7 @@ import org.junit.jupiter.api.DisplayNameGenerator;
 
 import java.lang.reflect.Method;
 
-class ReplaceCamelCase extends DisplayNameGenerator.Standard {
+public class ReplaceCamelCase extends DisplayNameGenerator.Standard {
     public ReplaceCamelCase() {
     }
 
